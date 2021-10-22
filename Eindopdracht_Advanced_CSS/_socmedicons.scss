@@ -1,0 +1,45 @@
+.fa-laptop-code {
+    @include socMedBut;
+    background-color: $laptopcolor;
+    &::before {
+        content: "\f5fc";
+        background-color: $laptopcolor;
+    }
+}
+
+.fa-twitter {
+    @include socMedBut;
+    background-color: $twittercolor;
+    
+    &::before {
+        content: "\f099";
+        background-color: $twittercolor;
+    }
+}
+
+.fa-linked-in {
+    @include socMedBut;
+    background-color: $linkedincolor;
+    &::before {
+        content: "\f0e1";
+        background-color: $linkedincolor;
+    }
+}
+
+.fa-facebook-f {
+    @include socMedBut;
+    background-color: $facebookcolor;
+    &::before {
+        content: "\f39e";
+        background-color: $facebookcolor;
+    }
+}
+
+.fa-github {
+    @include socMedBut;
+    background-color: $githubcolor;
+    &::before {
+        content: "\f09b";
+        background-color: $githubcolor;
+    }
+}

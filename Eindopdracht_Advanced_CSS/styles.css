@@ -1,0 +1,266 @@
+@charset "UTF-8";
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 20px;
+  width: 450px;
+}
+.card__footertext {
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.card__footertext::after {
+  content: "ExampleWebsite.com";
+  font-size: 20px;
+  color: #c3cfe2;
+  position: absolute;
+  transform: translateX(-150px) translateY(30px);
+}
+.card__item1 {
+  width: 450px;
+  height: 400px;
+  background-color: #fff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.card__text {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 40px;
+  color: dimgrey;
+  padding: 30px;
+}
+.card__text:after {
+  content: "";
+  background-image: url("https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg");
+  background-size: 150px 125px;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(35px) translateX(-150px);
+  border: solid white 6px;
+}
+.card__item2 {
+  width: 450px;
+  height: 200px;
+  background-color: #686de0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.portfolio {
+  margin: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 10%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.portfolio__item {
+  width: 70%;
+  border: 2px solid black;
+  background: #fff;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.portfolio__button {
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  transition: ease-out 500ms;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: black;
+  color: #fff;
+  transition: ease-out 250ms;
+}
+.portfolio__image {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 3;
+  transition: ease-out 250ms;
+}
+.portfolio__item:hover .portfolio__image {
+  opacity: 0.3;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    gap: 30px 15%;
+  }
+  .portfolio__item {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio {
+    gap: 30px 10%;
+  }
+  .portfolio__item {
+    width: 25%;
+  }
+}
+.fa-laptop-code {
+  width: 20px;
+  height: 15px;
+  padding: 12px;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  text-decoration: underline;
+  white-space: nowrap;
+  transition: 500ms ease-out;
+  background-color: #e17b77;
+}
+.fa-laptop-code::before {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+.fa-laptop-code:hover {
+  width: 210px;
+}
+.fa-laptop-code::before {
+  content: "";
+  background-color: #e17b77;
+}
+
+.fa-twitter {
+  width: 20px;
+  height: 15px;
+  padding: 12px;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  text-decoration: underline;
+  white-space: nowrap;
+  transition: 500ms ease-out;
+  background-color: #00aced;
+}
+.fa-twitter::before {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+.fa-twitter:hover {
+  width: 210px;
+}
+.fa-twitter::before {
+  content: "";
+  background-color: #00aced;
+}
+
+.fa-linked-in {
+  width: 20px;
+  height: 15px;
+  padding: 12px;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  text-decoration: underline;
+  white-space: nowrap;
+  transition: 500ms ease-out;
+  background-color: #007bb6;
+}
+.fa-linked-in::before {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+.fa-linked-in:hover {
+  width: 210px;
+}
+.fa-linked-in::before {
+  content: "";
+  background-color: #007bb6;
+}
+
+.fa-facebook-f {
+  width: 20px;
+  height: 15px;
+  padding: 12px;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  text-decoration: underline;
+  white-space: nowrap;
+  transition: 500ms ease-out;
+  background-color: #3b5998;
+}
+.fa-facebook-f::before {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+.fa-facebook-f:hover {
+  width: 210px;
+}
+.fa-facebook-f::before {
+  content: "";
+  background-color: #3b5998;
+}
+
+.fa-github {
+  width: 20px;
+  height: 15px;
+  padding: 12px;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  text-decoration: underline;
+  white-space: nowrap;
+  transition: 500ms ease-out;
+  background-color: #333;
+}
+.fa-github::before {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+.fa-github:hover {
+  width: 210px;
+}
+.fa-github::before {
+  content: "";
+  background-color: #333;
+}
+
+body {
+  background-color: #c3cfe2;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=styles.css.map */

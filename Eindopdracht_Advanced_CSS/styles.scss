@@ -1,0 +1,53 @@
+//Variables//
+
+$grey: #c3cfe2;
+$blueish: #686de0;
+$white: #fff;
+$black: black;
+$laptopcolor: #e17b77;
+$twittercolor: #00aced;
+$githubcolor: #333;
+$linkedincolor: #007bb6;
+$facebookcolor: #3b5998;
+
+
+//Mixins//
+
+@mixin socMedBut {
+    width: 20px;
+    height: 15px;
+    padding: 12px;
+    font-size: 15px;
+    color: $white;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    text-decoration: underline;
+    white-space: nowrap;
+    transition: 500ms ease-out;
+    &::before {
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        padding-right: 30px;
+        text-decoration: none;
+    }
+    &:hover {
+        width: 210px; 
+    }
+}
+
+//Imports//
+
+@import "./_card.scss";
+@import "./_portfolio.scss";
+@import "./_socmedicons.scss";
+
+//Styles //
+
+body {
+    background-color: $grey;
+    margin: 0;
+    padding: 0;
+ 
+}
